@@ -33,7 +33,11 @@
             zoom: 12,
             minZoom: 0,
             maxZoom: 12,
-            layers: [osm]
+            layers: [osm],
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+              position: 'topleft'
+            }
       }).setView([-30.765983861512524, -53.167068929063674], 6.0);
       L.tileLayer('OUTPUT_DIRECTORY/{z}/{x}/{y}.png', {
         minZoom: 0,
